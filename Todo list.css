@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f0f3;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  color: #2466da;
+}
+
+.h1 {
+  color: #2466da;
+}
+
+.txt-container {
+  width: 100%;
+}
+
+.txtbox {
+  position: relative;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: right;
+}
+
+input[type="text"] {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #2466da;
+  padding: 0 30px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addbtn {
+  position: absolute;
+  display: flex;
+  margin-right: 50px;
+  width: 80px;
+  height: 35px;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1365f5;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .addbtn {
+    margin-right: 15px;
+    font-size: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 10px;
+  }
+  #error {
+    font-size: 12px;
+  }
+  .list {
+    font-size: 14px;
+  }
+}
+
+#error {
+  position: absolute;
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: #d1512d;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.data {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+#head {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addlist {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  padding-left: 50px;
+}
+
+.list {
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 20px;
+  font-size: 28px;
+  position: relative;
+}
+
+.chkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 25px;
+}
+
+.imgdel {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: -10px;
+  margin-right: 50%;
+  float: right;
+}
+
+.inputdata {
+  width: 100px;
+  height: 100px;
+}
+
+if(.mylist,.list input[type='checkbox']:checked){
+  .text {
+    text-decoration: line-through;
+  }
+  
+}
